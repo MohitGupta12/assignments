@@ -9,5 +9,15 @@ There is no automated test for this one, this is more for you to understand time
 */
 
 function calculateTime(n) {
-    return 0.01;
+    let timeBefore, timeAfter;
+    let date = new Date;
+    timeBefore = date.getTime();
+    for (let index = 1; index < n; index++) {}
+    timeAfter = date.getTime();
+    return (timeBefore-timeAfter);
+}
+let m=20;
+for (let index = 1; index < m; index++) {
+    let n = Math.pow(10,index);
+    console.log(`Time taken for 1-${n} is ${calculateTime(n)}`);
 }
